@@ -1,0 +1,49 @@
+#content {
+    font-family: 'Times New Roman', Times, serif;
+    max-width: 600px;
+    margin: 0 auto;
+}
+header {
+    text-align: center;
+}
+hr { 
+    margin-top: 0.1rem;
+    margin-bottom: 1rem; 
+    height: .5px;
+    background-color: lightgray;
+    border: none;
+}
+h1 { 
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    display: block;
+    width: 100%;
+    margin-bottom: 0.1rem;
+    font-size: 40px;
+}
+h2 {
+    color: #006EB6;
+    letter-spacing: 0.1rem;
+    margin-bottom: 0.1rem;
+    display: inline-block;
+    width: auto;
+    font-size: 20px;
+    font-weight: normal;
+}
+p , .list {
+    font-size: 20px;
+    text-align: left;
+}
+p {
+    margin-top: 2.5rem;
+}
+.list li {
+    margin-top: 1.5rem;
+}
+img {
+    margin: 0 auto;
+    display: block;
+    height: auto;
+    max-width: 150px;
+    padding-top: 3rem;
+}
