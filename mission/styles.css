@@ -2,13 +2,28 @@
     font-family: 'Times New Roman', Times, serif;
     max-width: 600px;
     margin: 0 auto;
+    margin-top: 50px;
+    border: .5px solid lightgray;
+    padding: 75px;
+}
+#choose-Theme {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    width: auto;
+    padding: 4px 6px;
+    font-size: 14px;
+    z-index: 1000;
+}
+body{
+    transition: background-color 1s ease;
 }
 header {
     text-align: center;
 }
 hr { 
     margin-top: 0.1rem;
-    margin-bottom: 1rem; 
+    margin-bottom: 1rem;
     height: .5px;
     background-color: lightgray;
     border: none;
@@ -46,4 +61,24 @@ img {
     height: auto;
     max-width: 150px;
     padding-top: 3rem;
+}
+
+/* dark theme */
+body.dark {
+    background-color: rgba(51, 51, 51, 51);
+}
+
+body.dark h1,
+body.dark p,
+body.dark .list {
+    color: white;
+}
+
+body.dark h2 {
+    color:#0194f6;
+}
+
+/*light theme */
+body.light {
+    background-color: white;
 }
