@@ -3,7 +3,7 @@
     max-width: 600px;
     margin: 0 auto;
     margin-top: 50px;
-    border: .5px solid lightgray;
+    border: 1.6px solid lightgray;
     padding: 75px;
 }
 #choose-Theme {
@@ -22,9 +22,9 @@ header {
     text-align: center;
 }
 hr { 
-    margin-top: 0.1rem;
+    margin-top: 5px;
     margin-bottom: 1rem;
-    height: .5px;
+    height: 1.6px;
     background-color: lightgray;
     border: none;
 }
