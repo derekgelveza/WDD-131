@@ -1,0 +1,100 @@
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header, main, footer {
+    max-width: 640px;
+    margin: 1rem auto;
+    border: 1px solid darkgrey;
+    padding: 1rem;
+    background-color: lightblue;
+}
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+}
+h1 {
+    text-align: center;
+}
+nav {
+    text-align: center;
+    margin-top: 1rem;
+}
+nav a {
+    color: black;
+    padding: 15px 15px;
+    display: none;
+    text-decoration: none;
+    border-top: 0.5px solid black;
+}
+nav a:hover {
+    text-decoration: none;
+    color: darkgray;
+}
+.menu-button {
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+}
+.line1, .line2, .line3{
+    background-color: black;
+    height: 5px;
+    width: 40px;
+    margin: 6px;
+}
+#first-scripture{
+    padding: 20px;
+    background-color: white;
+    margin: 1em;
+    border: 1px solid #ccc;
+}
+#second-scripture {
+    padding: 20px;
+    background-color: white;
+    margin: 1em;
+    border: 1px solid #ccc;
+}
+#third-scripture {
+    padding: 20px;
+    background-color: white;
+    margin: 1em;
+    border: 1px solid #ccc;
+}
+footer {
+    text-align: center;
+}
+
+.change .line1 {
+  transform: translate(0, 11px) rotate(-45deg);
+}
+.change .line2 {opacity: 0;}
+
+.change .line3 {
+  transform: translate(0, -11px) rotate(45deg);
+}
+
+@media screen and (min-width: 700px) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }  
+    .menu-button {
+        display: none;
+    }
+    nav a {
+        display: inline;
+        border-top: none;
+    }
+    nav {
+        text-align: right;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    main {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
