@@ -39,12 +39,16 @@ header, footer {
     font-size: 24px;
 
 }
+.hide {
+  display: none;
+}
 nav {
     margin-top: .5rem;
     font-family: var(--primary-font);
     display: flex;
     flex-direction: column;
     align-items: center;
+
 }
 nav a{
     display: block;
