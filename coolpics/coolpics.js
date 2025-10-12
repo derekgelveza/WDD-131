@@ -14,7 +14,8 @@ const closeButton = dialog.querySelector(".close-viewer")
 
 galleryImages.forEach(img => {
     img.addEventListener("click", () => {
-        dialogImg.src = img.src;
+        const fullImage = img.src.replace("-sm", "-full");
+        dialogImg.src = fullImage;
         dialog.showModal();
     });
 });
