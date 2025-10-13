@@ -103,7 +103,7 @@ p {
 .image-container {
   position: relative;
   margin: auto;
-  max-width: 400px;
+  max-width: 550px;
   max-height: 80vh;
 }
 .image-modal {
