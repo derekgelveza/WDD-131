@@ -1,0 +1,117 @@
+:root {
+    --title-color: #AF1B3F;
+    --primary-color: #473144;
+    --border-color: #EFC69B;
+    --body-font: "Helvetica", Arial, sans-serif;
+    --headline-font: "Lora", Impact, serif;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+header {
+    display: grid;
+    grid-template-rows: 1fr auto;
+    text-align: center;
+    margin: 0;
+}
+header::before, header::after {
+    content: "";
+    border-top: 2.5px solid var(--border-color);
+    width: 100%;
+}
+header h1 {
+    font-family: var(--headline-font);
+    color: var(--primary-color);
+    grid-row: 1;
+    margin-bottom: 1rem;
+}
+nav {
+    list-style: none;
+    font-family: var(--body-font);
+    color: var(--title-color);
+    grid-row: 2;
+    justify-self: end;
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    margin-right: 9rem;
+    font-size: 20px;
+}
+nav a {
+    text-decoration: none;
+    color: var(--title-color);
+}
+main {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 2rem;
+    padding: 1rem;
+    color: var(--primary-color);
+    font-family: var(--body-font);
+}
+main h2 {
+    font-family: var(--headline-font);
+    color: var(--title-color);
+}
+main a{
+    text-decoration: none;
+    color: var(--title-color);
+}
+#filters {
+    border: 2.5px solid var(--border-color);
+    padding: 1rem;
+}
+.blog {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    margin-bottom: 2rem;
+}
+.blog .details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+    gap: 0;
+    margin-top: 2rem;
+    margin-right: 1rem;
+}
+.blog .details p {
+    margin: 0;
+    padding: 0;
+}
+.blog .content {
+    text-align: left;
+}
+.blog .content img {
+    display: block;
+    margin: 1rem auto;
+}
+.blog .content p {
+    margin-left: 1rem;
+}
+.blog .content h2 {
+    margin-left: 1rem;
+    font-size: 2rem;
+    line-height: 1.2;
+}
+.blog::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 25%;
+    width: 2px;
+    background-color: var(--border-color);
+}
+footer {
+    text-align: center;
+    padding: 1rem;
+    color: var(--primary-color);
+    font-family: var(--body-font);
+    border-top:var(--border-color) 2.5px solid;
+    margin-top: 2.5rem;
+}
