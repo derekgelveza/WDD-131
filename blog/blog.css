@@ -27,7 +27,8 @@ header h1 {
     font-family: var(--headline-font);
     color: var(--primary-color);
     grid-row: 1;
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
+    font-size: 55px;
 }
 nav ul {
     list-style: none;
@@ -63,24 +64,33 @@ main a{
     text-decoration: none;
     color: var(--title-color);
 }
+#main-content {
+    margin-top: 30px;
+}
 #filters {
     border: 2.5px solid var(--border-color);
     padding: 1rem;
+}
+#filters p{
+    font-size: 20px;
 }
 .blog {
     position: relative;
     display: grid;
     grid-template-columns: 1fr 3fr;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
 }
 .blog .details {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     text-align: right;
-    gap: 0;
-    margin-top: 2rem;
+    gap: 10px;
+    margin-top: 1.25rem;
     margin-right: 1rem;
+}
+.blog .details p:first-child {
+    font-size: 20px;
 }
 .blog .details p {
     margin: 0;
@@ -92,14 +102,16 @@ main a{
 .blog .content img {
     display: block;
     margin: 1rem auto;
+    margin-bottom: 2rem;
 }
 .blog .content p {
     margin-left: 1rem;
 }
 .blog .content h2 {
     margin-left: 1rem;
-    font-size: 2rem;
+    font-size: 45px;
     line-height: 1.2;
+    margin-top: 0;
 }
 .blog::before {
     content: "";
