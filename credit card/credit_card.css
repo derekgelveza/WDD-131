@@ -1,0 +1,130 @@
+body {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+  font-family: sans-serif;
+}
+
+#form-container {
+  position: relative;
+  display: grid;
+  justify-items: center;
+  width: 500px;
+  height: 320px;
+}
+
+/* FRONT CARD */
+.card-front {
+  background-color: #e4e4e4;
+  border-radius: 8px;
+  padding: 20px 30px;
+  width: 390px;
+  height: 250px;
+  box-sizing: border-box;
+  color: black;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  gap: 1rem;
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.total-container {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cardnumber-container {
+  grid-column: 1 / -1;
+}
+
+.cardholder-container {
+  grid-column: 1;
+}
+
+.expiration-container {
+    grid-column: 2;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 0.5rem;
+}
+
+.expiration-container label {
+  grid-column: 1 / -1;
+  font-weight: normal; 
+  margin-bottom: 0.25rem;
+}
+
+.expiration-container input {
+  width: 60px;                 
+  height: 32px;                
+  padding: 6px 8px;            
+  font-size: 14px;             
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+
+/* BACK CARD */
+.card-back {
+  background-color: #ccc;
+  border-radius: 8px;
+  width: 430px;
+  height: 250px;
+  position: absolute;
+  top: 60px; 
+  left: 80px; 
+  z-index: 1;
+  display: grid;
+  grid-template-rows: 50px 1fr;
+  box-sizing: border-box;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+#card-stripe {
+  background-color: #3d5266;
+  width: 100%;
+  height: 50px;
+  margin-top: 20px;
+}
+
+.cvv-container {
+  align-self: end;
+  justify-self: end;
+  padding: 0 25px 20px 0; 
+}
+
+.cvv-container label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 0.25rem;
+}
+
+.cvv-container input {
+  width: 60px;
+  padding: 0.4rem;
+  text-align: center;
+  font-size: 14px;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+}
+
+#card-btn {
+  position: absolute;
+  bottom: -55px;
+  right: 0;
+  background-color: #f0f0f0;
+  border: 1px solid #000;
+  border-radius: 5px;
+  padding: 8px 16px;
+  cursor: pointer;
+}

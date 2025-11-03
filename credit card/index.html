@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="credit_card.css">
+    <title>Document</title>
+</head>
+<body>
+    <main id="main-content">
+        <form id="form-container" method="POST">
+            <div class="card-front">
+            <div class="total-container">
+                <span id="amount">TOTAL: $199</span>
+                <img src="images/card-icon.png" alt="mini-card">
+            </div>
+
+            <div class="cardnumber-container">
+                <label for="card-number">CARD NUMBER</label>
+                <input type="text" id="card-number" placeholder="1234 5678 9101 1020">
+            </div>
+
+            <div class="cardholder-container">
+                <label for="card-holder">CARD HOLDER</label>
+                <input type="text" id="card-holder" placeholder="John Doe">
+            </div>
+
+            <div class="expiration-container">
+                <label>EXPIRATION</label>
+                <input type="text" id="card-month" placeholder="MM" maxlength="2">
+                <input type="text" id="card-year" placeholder="YY" maxlength="2">
+            </div>
+            </div>
+
+            <div class="card-back">
+            <div id="card-stripe"></div>
+            <div class="cvv-container">
+                <label for="cvc">CVC/CVV</label>
+                <input type="text" id="cvc" placeholder="xxx" maxlength="3">
+            </div>
+            </div>
+
+            <button type="submit" id="card-btn">Submit</button>
+        </form>
+    </main>
+    
+    
+</body>
+</html>
