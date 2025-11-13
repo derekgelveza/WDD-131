@@ -1,0 +1,44 @@
+
+* {
+box-sizing: border-box;
+}
+
+body {
+font-size: 20px;
+max-width: 1280px;
+margin: auto;
+padding: 1em;
+}
+
+img {
+max-width: 100%;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+    list-style-type: none;
+}
+
+hr{
+margin-top: 50px;
+}
+              
+@media screen and (min-width: 700px) {
+    .media-card {
+        display: flex;
+        gap: 1rem;
+
+    }
+    .gallery {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+    .gallery > .media-card {
+        flex: 1 0 45%;
+
+    }
+    
+}
