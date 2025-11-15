@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
     <title>Recipe Book</title>
     <link rel="stylesheet" href="recipes.css">
-    <script src="recipes.mjs" defer></script>
+    <script src="main.js" defer></script>
 </head>
 <body>
     <header>
@@ -30,7 +30,17 @@
             <div class="recipe-card-content">
                 <h2 id="recipe-type">dessert</h2>
                 <h2 id="food-type">Apple Crisp</h2>
-                <p>*****</p>
+                <span
+                    class="rating"
+                    role="img"
+                    aria-label="Rating: 4 out of 5 stars"
+                >
+                    <span aria-hidden="true" class="icon-star">⭐</span>
+                    <span aria-hidden="true" class="icon-star">⭐</span>
+                    <span aria-hidden="true" class="icon-star">⭐</span>
+                    <span aria-hidden="true" class="icon-star-empty">⭐</span>
+                    <span aria-hidden="true" class="icon-star-empty">☆</span>
+                </span>
                 <p id="discription">This apple crisp recipe is a simple yet delicious fall dessert that's great served warm with vanilla ie cream.</p>
             </div>
 
