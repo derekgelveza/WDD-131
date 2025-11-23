@@ -16,7 +16,7 @@
     <meta name="description" content="Recipe Book Assignment">
     <meta name="author" content="Derek Gelvez">
     <link rel="stylesheet" href="recipes.css">
-    <script src="main.js" defer></script>
+    <script src="main.js" type="module" defer></script>
 </head>
 <body>
     <header>
@@ -25,40 +25,21 @@
     </header>
     <main>
         <section class="search-container">
-            <form action="search" method="POST"></form>
-            <label for="search-input" id="search-input">Find a Recipe!</label>
+            <label for="search" id="search-input"></label>
             <input type="search" id="search" placeholder="Find a recipe">
-            <button type="submit" id="submit-img"><img src="images/search.svg" alt="search img for button"></button>
+            <button type="submit" id="submit-img">
+                <img src="images/search.svg" alt="search">
+            </button>
         </section>
 
-        <section class="content-card-container">
-            <div class="recipe-img">
-                <img src="images/apple-crisp.jpg" alt="Image of Apple Crisp">
-            </div>
-            <div class="recipe-card-content">
-                <h2 id="recipe-type">dessert</h2>
-                <h2 id="food-type">Apple Crisp</h2>
-                <span
-                    class="rating"
-                    role="img"
-                    aria-label="Rating: 4 out of 5 stars"
-                >
-                    <span aria-hidden="true" class="icon-star">⭐</span>
-                    <span aria-hidden="true" class="icon-star">⭐</span>
-                    <span aria-hidden="true" class="icon-star">⭐</span>
-                    <span aria-hidden="true" class="icon-star-empty">⭐</span>
-                    <span aria-hidden="true" class="icon-star-empty">☆</span>
-                </span>
-                <p id="discription">This apple crisp recipe is a simple yet delicious fall dessert that's great served warm with vanilla ie cream.</p>
-            </div>
-
+        <section class="recipes-container">
         </section>
-
     </main>
     <footer>
-        <a href="https://www.flaticon.com/free-icons/recipe" title="recipe icons">Recipe icons created by Freepik - Flaticon</a> 
+        <a href="https://www.flaticon.com/free-icons/recipe" title="recipe icons">
+            Recipe icons created by Freepik - Flaticon
+        </a> 
         <div class="social">
-            <!-- Social media icons provided under CC from https://www.iconfinder.com/AlfredoCreates  -->
             <a href="#"><img src="images/instagram_icon.svg" alt="instagram icon"></a>
             <a href="#"><img src="images/youtube_icon.svg" alt="youtube icon"></a>
             <a href="#"><img src="images/pinterest_icon.svg" alt="pinterest icon"></a>
