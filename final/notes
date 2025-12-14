@@ -1,0 +1,122 @@
+<div class="carousel">
+
+        <div class="list">
+            <div class="item">
+                <img src="images2/Project1.png" alt="Nutrition App Project">
+                <div class="content">
+                    <div class="title">Nutrition App</div>
+                    <div class="Languages">Python, CSS, JavaScript</div>
+                    <div class="des">
+                        <p>Imagine a world where healthy eating is effortless, personalized, and tailored to your lifestyle. Our app, FridgeAI, does exactly that. By analyzing the ingredients you already have at home and your personal dietary goals, it generates meal suggestions complete with nutritional information — calories, protein, carbs, and fats — so you always know what you’re eating.
+                            No more guessing, no more wasted food, and no more complicated meal planning. FridgeAI not only saves time and money, but it also helps you stay on track with your health and fitness goals, making every meal a step toward a healthier, smarter lifestyle.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="list">
+            <div class="item">
+                <img src="images2/project-2.png" alt="Nutrition App Project">
+                <div class="content">
+                    <div class="title">Nutrition App</div>
+                    <div class="Languages">Python, CSS, JavaScript</div>
+                    <div class="des">
+                        <p>Imagine a world where healthy eating is effortless, personalized, and tailored to your lifestyle. Our app, FridgeAI, does exactly that. By analyzing the ingredients you already have at home and your personal dietary goals, it generates meal suggestions complete with nutritional information — calories, protein, carbs, and fats — so you always know what you’re eating.
+                            No more guessing, no more wasted food, and no more complicated meal planning. FridgeAI not only saves time and money, but it also helps you stay on track with your health and fitness goals, making every meal a step toward a healthier, smarter lifestyle.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="thumbnail">
+            <div class="item">
+                <img src="images2/Project1.png" alt="Nutrition App Project Thumbnail">
+                <div class="content">
+                    <div class="title">
+                        Name Slider
+                    </div>
+                    <div class="des">
+                        Description
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images2/project-2.png" alt="Nutrition App Project Thumbnail">
+                <div class="content">
+                    <div class="title">
+                        Name Slider
+                    </div>
+                    <div class="des">
+                        Description
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    .carousel{
+    height: 100vh;
+    margin-top: -25px;
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+}
+.carousel .list .item{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    inset: 0 0 0 0;
+}
+.carousel .list .item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.carousel .list .item .content{
+    position: absolute;
+    top: 20%;
+    width: 1140px;
+    max-width: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-right: 30%;
+    box-sizing: border-box;
+    color: black;
+    text-shadow: 0 5px 10px #0004;
+}
+.carousel .list .item .author{
+    font-weight: bold;
+    letter-spacing: 10px;
+}
+.carousel .list .item .title,
+.carousel .list .item .topic{
+    font-size: 5em;
+    font-weight: bold;
+    line-height: 1.3em;
+}
+.carousel .list .item .topic{
+    color: #f1683a;
+}
+.carousel .list .item .buttons{
+    display: grid;
+    grid-template-columns: repeat(2, 130px);
+    grid-template-rows: 40px;
+    gap: 5px;
+    margin-top: 20px;
+}
+.carousel .list .item .buttons button{
+    border: none;
+    background-color: #eee;
+    letter-spacing: 3px;
+    font-family: Poppins;
+    font-weight: 500;
+}
+.carousel .list .item .buttons button:nth-child(2){
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #eee;
+}
