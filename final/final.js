@@ -151,7 +151,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 /*Tutorial followed: https://www.kirupa.com/animations/animated_3d_starfield_effect.htm*/
-/*Everything above this is my code*/ 
 
 const outerspace = document.querySelector("#outerspace");
 const mainContext = outerspace.getContext("2d");
