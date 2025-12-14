@@ -16,6 +16,10 @@
     padding: 0;
 }
 
+.phone-nav {
+    display: none;;
+}
+
 #outerspace {
     position: fixed;
     z-index: -1;
@@ -366,4 +370,117 @@ footer a{
     font-family: var(--paragraph-font);
     font-size: 20px;
 }
+
+#phone-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background: rgba(255,255,255,0.1);
+  padding: 0.5rem;
+  border-radius: 10px;
+}
+
+#phone-menu.hidden {
+  display: none;
+}
+
+@media screen and (max-width: 600px) { /* Yeah i forogt to do the responsiveness until last minute, it is not perfect in anyway */
+
+
+.desktop-nav {
+    display: none;
+}
+
+
+.phone-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+
+  body {
+    font-size: 16px;
+  }
+
+  main {
+    width: 95%;
+    padding: 1.5rem;
+    border: none;
+    border-radius: 0;
+  }
+
+  .info-header {
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  #portfolio-img img {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+  }
+
+  .info-header-text {
+    text-align: center;
+  }
+
+  .btn-container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .about-me {
+    height: auto;
+    font-size: 1rem;
+    padding-right: 0;
+  }
+
+
+
+  .project {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 100%;
+    padding: 1.5rem;
+  }
+
+  .project-img-container {
+    width: 100%;
+    height: auto;
+  }
+
+  .project img {
+    width: 100%;
+    height: auto;
+  }
+
+  .controls button {
+    width: 35px;
+    height: 35px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+  }
+
+  footer .footer-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  footer .footer-img img {
+    width: 30px;
+    height: 30px;
+  }
+ canvas#outerspace { 
+    display: none; 
+}
+}
+
 

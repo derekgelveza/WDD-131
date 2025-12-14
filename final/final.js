@@ -137,6 +137,16 @@ document.addEventListener("DOMContentLoaded", () => {
         isDraggingContact = false;
     });
     }
+
+    const menuBtn = document.getElementById("menu-btn");
+    const phoneMenu = document.getElementById("phone-menu");
+
+    if (menuBtn && phoneMenu) {
+    menuBtn.addEventListener("click", () => {
+        phoneMenu.classList.toggle("hidden");
+    });
+    }
+
 });
 
 
