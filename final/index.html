@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles.css">
     <script src="final.js" defer></script>
 </head> 
-<body>
+<body class="has-welcome">
     <canvas id="outerspace"></canvas>
 
     <header>
@@ -23,9 +23,7 @@
 
             <nav id="main-nav" class="hidden">
                 <a href="index.html">Home</a>
-                <a href="#resume">Resume</a>
                 <a href="projects.html">Projects</a>
-                <a href="#contact">Contact</a>
             </nav>
 
             <div class="phone-nav">
@@ -42,6 +40,11 @@
             <div class="info-header-text">
                 <h1>Derek Gelvez</h1>
                 <p>Aspiring Software Engineer</p>
+                <div class="btn-container">
+                    <button id="resume-btn">Resume</button>
+                    <button id="contact-btn">Contact Me</button>
+                </div>
+                
             </div>
         </div>
 
@@ -64,14 +67,51 @@
             <p>I have native fluency in English and Spanish</p>
         </div>
 
+        <div id="resume-modal" class="modal hidden">
+            <div class="modal-header">
+                <span>Resume</span>
+                <button id="close-modal">✕</button>
+            </div>
+
+            <div class="modal-body">
+                <iframe src="resume.html"></iframe>
+            </div>
+        </div>
+
+        <div id="contact-modal" class="modal hidden">
+            <div class="modal-header">
+                <span>Contact Me</span>
+                <button id="close-contact">✕</button>
+            </div>
+
+            <div class="modal-body">
+                <form class="contact-form">
+                <label>
+                    Name
+                    <input type="text" placeholder="Your name" required>
+                </label>
+
+                <label>
+                    Email
+                    <input type="email" placeholder="Your email" required>
+                </label>
+
+                <label>
+                    Message
+                    <textarea id="message-box" placeholder="Your message" required></textarea>
+                </label>
+
+                <button type="submit">Send</button>
+                </form>
+            </div>
+        </div>
+
+
     </main>
     <footer>
         <div class="footer-container">
             <div id="footer-text">
                 <p>© 2025 Derek Gelvez</p>
-                <a href="contact@">
-                    <p>Contact Me!</p>
-                </a>
             </div>
 
             <div class="footer-img">
